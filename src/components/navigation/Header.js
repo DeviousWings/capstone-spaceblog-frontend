@@ -5,7 +5,8 @@ import { UserContext } from "./UserContext";
 const NavigationComponent = (props) => {
   const { setUserInfo, userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch("http://localhost:4000/profile", {
+    // fetch("http://localhost:4000/profile", {
+    fetch("http://localhost:127.0.0.1:5000/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -15,7 +16,8 @@ const NavigationComponent = (props) => {
   }, []);
 
   function logout() {
-    fetch("http://localhost:4000/logout", {
+    // fetch("http://localhost:4000/logout", {
+    fetch("http://localhost:127.0.0.1:5000/logout", {
       credentials: "include",
       method: "POST",
     });

@@ -12,7 +12,8 @@ export default function Login() {
   const { setUserInfo } = useContext(UserContext);
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch("http://localhost:4000/login", {
+    // const response = await fetch("http://localhost:4000/login", {
+    const response = await fetch("http://localhost:127.0.0.1:5000/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },

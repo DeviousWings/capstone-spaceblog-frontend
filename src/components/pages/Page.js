@@ -10,7 +10,8 @@ export default function Page() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`).then((response) => {
+    // fetch(`http://localhost:4000/post/${id}`).then((response) => {
+    fetch(`http://localhost:127.0.0.1:5000/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });
