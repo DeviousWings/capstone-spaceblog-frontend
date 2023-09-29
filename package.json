@@ -6,11 +6,6 @@
     "node": "14.x",
     "npm": "6.x"
   },
-  "dependencies": {
-
-
-
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,6 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
-
 }
