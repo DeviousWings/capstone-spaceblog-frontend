@@ -5,8 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./components/App.js";
 import reportWebVitals from "./reportWebVitals.js";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <body>
